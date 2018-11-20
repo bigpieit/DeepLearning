@@ -22,7 +22,7 @@ class BayesClassifier:
             g = {'m': mean , 'c': cov}
             self.gaussians.append(g)
 
-    def sample_given_y(self, y):
+    def  sample_given_y(self, y):
         g = self.gaussians[y]
         print("mean.size:", g['m'].size)
         print("cov size :", g['c'].size)
